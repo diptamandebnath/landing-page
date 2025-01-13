@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing | Digital Agency</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            color: #333;
+            background-color: white;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            background-color: #fff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #0078d7;
+            background: url('logo.png');
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            margin: 0;
+            padding: 0;
+            gap: 40px;
+        }
+
+        nav ul li {
+            font-size: 1rem;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #0078d7;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #6a11cb;
+        }
+
+        nav .cta {
+            background-color: #0078d7;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        nav .cta:hover {
+            background-color: #005bb5;
+        }
+
+        nav .cta:hover {
+            background-color: #005bb5;
+        }
+
+        .pricing-section {
+            padding: 60px 40px;
+            text-align: center;
+            background: linear-gradient(to bottom right, #0078d7, #6a11cb);;
+        }
+
+        .pricing-section h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #ffee00;
+        }
+
+        .pricing-section p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            color: #ffffff;
+            max-width: 800px;
+            margin: 0 auto 40px;
+        }
+
+        .pricing-cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .pricing-card {
+            background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 300px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .pricing-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .pricing-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: #000000;
+        }
+
+        .pricing-card p {
+            font-size: 1rem;
+            color: #000000;
+            margin-bottom: 20px;
+        }
+
+        .pricing-card .price {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #0066ff;
+            margin-bottom: 20px;
+        }
+
+        .pricing-card button {
+            background-color: #0078d7;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .pricing-card button:hover {
+            background-color: #005bb5;
+        }
+
+        footer {
+            background-color: #1a1a2e;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 0.9rem;
+        }
+
+        footer a {
+            color: #ff4c29;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        .spark {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-style: oblique;
+            font-display: flex;
+            text-rendering: geometricPrecision;
+            color: #0078d7;
+            font-weight: bold;
+            font-size: 24px;
+        }
+
+        .linked img {
+            width: 35px;
+            height: 35px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="spark">Spark&copy</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <a href="#" class="cta">Get Started</a>
+    </nav>
+
+    <div class="pricing-section">
+        <h1>Our Pricing</h1>
+        <p>Choose the plan that best suits your business needs. Transparent pricing with no hidden costs.</p>
+        <div class="pricing-cards">
+            <div class="pricing-card">
+                <h3>Basic Plan</h3>
+                <p>Perfect for small businesses just starting out.</p>
+                <div class="price">₹99/month</div>
+                <button>Get Started</button>
+            </div>
+            <div class="pricing-card">
+                <h3>Pro Plan</h3>
+                <p>Ideal for growing businesses looking for more features.</p>
+                <div class="price">₹199/month</div>
+                <button>Get Started</button>
+            </div>
+            <div class="pricing-card">
+                <h3>Enterprise Plan</h3>
+                <p>Comprehensive solutions for large-scale businesses.</p>
+                <div class="price">₹499/month</div>
+                <button>Get Started</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="linked">
+            <a href="https://www.linkedin.com"><img src="https://img.icons8.com/?size=256&id=xuvGCOXi8Wyg&format=png"
+                    alt="Linkedin Image"></a>
+            <a href="https://www.x.com"><img src="https://img.icons8.com/?size=256&id=13963&format=png"
+                    alt="Twitter Image"></a>
+            <a href="https://www.facebook.com"><img src="https://img.icons8.com/?size=256&id=yGcWL8copNNQ&format=png"
+                    alt="Facebook Image"></a>
+        </div>
+        <p>&copy; 2025 Digital Agency. All rights reserved. <a href="#">Privacy Policy</a> | <a href="#">Terms of
+                Service</a></p>
+    </footer>
+</body>
+
+</html>
